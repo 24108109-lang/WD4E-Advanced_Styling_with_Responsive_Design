@@ -42,7 +42,35 @@ div{
   margin: 5px;
   padding: 2px;
 }
+/* TABLET VIEW - Truy vấn phương tiện thứ nhất */
+@media screen and (min-width: 772px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
 
+    div {
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    img {
+        max-height: 30vh;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
+
+
+/* LARGE SCREEN VIEW - Truy vấn phương tiện thứ hai */
+@media screen and (min-width: 998px) {
+    div {
+        width: 30%;
+    }
+}
 
 
 
